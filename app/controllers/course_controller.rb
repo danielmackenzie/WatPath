@@ -7,6 +7,8 @@ class CourseController < ApplicationController
 
     selected_courses.each do |course_code|
       course = Course.where(:short_form => course_code.strip).first
+      new_courses << course
+
       course.constraints.where(:pre_requisite => true).each do |constraint|
         other_courses = constraint.courses
 
