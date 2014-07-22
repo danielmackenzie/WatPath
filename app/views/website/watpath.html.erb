@@ -1,0 +1,208 @@
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+    $('#content').hide().fadeIn(1100);
+
+  });
+
+</script>
+
+<style>
+  #wp{
+    background-image: url("<%= asset_path('congruent_outline.png') %>");
+  }
+</style>
+<body id="wp" class="wp">
+ <!-- Fixed navbar -->
+    <div class="navbar navbar-centered navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="push_min"></div>
+    <a class="navbar-brand" href="/"><img style="max-width:50px; margin-top: -35px;"
+             src="<%= asset_path('WP_logo_symb.png') %>"></a>
+      <div class="container ">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+                    <li class="active"><a href="/watpath">WatPath</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+<div class = "push"></div>
+
+<div class="container">
+
+<section class="block">
+<button class="help btn btn-primary " data-toggle="modal" data-target="#help">
+  Help 
+</button>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+       <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+
+                <h3>CS Courses</h3> 
+
+<!-- Modal -->
+<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close help" data-dismiss="modal"><span aria-hidden="false">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">How to use</h4>
+      </div>
+      <div class="modal-body">
+      <p> "Single click on a node to view the course's description, and double click to select it" </p>
+      </div>
+    </div>
+  </div>
+</div>
+                <!--1a CS-->
+<div class="row centered">
+ <button  id="cs115" type="button" class="btn btn-default btn-circle btn-xl 1a">CS 115</button>
+ <button  id="cs135" type="button" class="btn btn-default btn-circle btn-xl 1a" >CS 135</button>
+ <button  id="cs145" type="button" class="btn btn-default btn-circle btn-xl 1a" >CS 145</button>
+</div>
+
+<div class = "push"></div>
+
+<!-- 1b CS -->
+<div class="row centered">
+ <button  id="cs116" type="button" class="btn btn-default btn-circle btn-xl 1b s115 s135">CS 116</button>
+ <button  id="cs136" type="button" class="btn btn-default btn-circle btn-xl 1b s116 s135" >CS 136</button>
+ <button  id="cs146" type="button" class="btn btn-default btn-circle btn-xl 1b s145" >CS 146</button>
+</div>
+
+
+<div class = "push"></div>
+
+<!--2a CS -->
+<div class="row centered">
+ <button  id="cs246" type="button" class="btn btn-default btn-circle btn-xl 2a s136">CS 246</button>
+ <button  id="cs245" type="button" class="btn btn-default btn-circle btn-xl 2a s136" >CS 245</button>
+ <button  id="cs251" type="button" class="btn btn-default btn-circle btn-xl 2a s136" >CS 251</button>
+</div>
+
+
+
+
+
+            </div>
+            <div class="item">
+                <h3>Math Courses</h3>
+                <div class="row centered">
+ <button  id="math137" type="button" class="btn btn-default btn-circle btn-xl 1a">MATH 137</button>
+ <button  id="math135" type="button" class="btn btn-default btn-circle btn-xl 1a" >MATH 135</button>
+ 
+</div>
+
+<div class = "push"></div>
+
+<!-- 1b CS -->
+<div class="row centered">
+ <button  id="math138" type="button" class="btn btn-default btn-circle btn-xl 1b s137">MATH 138</button>
+ <button  id="math136" type="button" class="btn btn-default btn-circle btn-xl 1b sm135" >MATH 136</button>
+ <button  id="stat230" type="button" class="btn btn-default btn-circle btn-xl 1b s137" >STAT 230</button>
+</div>
+
+
+<div class = "push"></div>
+
+<!--2a CS -->
+<div class="row centered">
+ <button  id="stat231" type="button" class="btn btn-default btn-circle btn-xl 2a s230">STAT 231</button>
+ <button  id="math239" type="button" class="btn btn-default btn-circle btn-xl 2a sm136" >MATH 239</button>
+
+</div>
+                
+            </div>
+            <div class="item">
+                <h3>Science Courses</h3>
+                <div class="row centered">
+ <button  id="phys111" type="button" class="btn btn-default btn-circle btn-xl 1a">PHYS 111</button>
+ <button  id="chem120" type="button" class="btn btn-default btn-circle btn-xl 1a" >CHEM 120</button>
+ <button  id="biol130" type="button" class="btn btn-default btn-circle btn-xl 1a" >BIOL 130</button>
+</div>
+
+<div class = "push"></div>
+
+<!-- 1b CS -->
+<div class="row centered">
+ <button  id="phys112" type="button" class="btn btn-default btn-circle btn-xl 1b s111 ">PHYS 112</button>
+ <button  id="chem123" type="button" class="btn btn-default btn-circle btn-xl 1b s120" >CHEM 123</button>
+ <button  id="biol150" type="button" class="btn btn-default btn-circle btn-xl 1b s130" >BIOL 150</button>
+</div>
+
+
+<div class = "push"></div>
+
+<!--2a CS -->
+<div class="row centered">
+ <button  id="phys234" type="button" class="btn btn-default btn-circle btn-xl 2a s112">PHYS 234</button>
+ <button  id="chem220" type="button" class="btn btn-default btn-circle btn-xl 2a s123" >CHEM 220</button>
+ <button  id="biol239" type="button" class="btn btn-default btn-circle btn-xl 2a s150" >BIOL 239</button>
+</div>
+
+                
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <div class ="row">
+<!-- Button trigger modal -->
+<button class="courseinfo btn btn-primary btn-lg cinfo" data-toggle="modal" data-target="#myModal">
+  Course info (<cname></cname>) 
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close help" data-dismiss="modal"><span aria-hidden="false">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel"><cname></cname> - <ctitle></ctitle></h4>
+      </div>
+      <div class="modal-body">
+      <p id ="cdesc"> </p>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    
+
+<!-- Footer Content -->
+
+</div>
+
+</div>
+
+</body>

@@ -1,0 +1,417 @@
+@import url("<%= asset_path('bootstrap.css') %>");
+@import url("<%= asset_path('bootstrap-theme.css') %>");
+
+body{
+  background-image: url("<%= asset_path('sandpaper.png') %>");
+  background-repeat: repeat;
+  text-align: left;
+}
+
+body.thin{
+  padding-top: 150px;
+  
+}
+
+body.wp{
+  background-image: url("<%= asset_path('congruent_outline.png') %>");
+}
+
+
+
+.carousel h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    text-align: center;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    height: 100% ;/*slider height*/
+    padding-bottom: 120px;
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: transparent;
+    border: none;
+    top: 50%;
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+div.img-div{
+    height:200px;
+    width:200px;
+    margin-left: 0px;
+    text-align: center;
+    overflow:hidden;
+    border-radius:50%;
+}
+
+div.col-md-3{
+  text-align: center;
+  margin-left: 150px;
+}
+
+@media (max-width: 900px){
+  div.col-md-3{
+  text-align: center;
+  margin-left: 50px;
+}
+}
+
+.img-div img{
+    -webkit-transform:translate(-50%);
+    -moz-transform:translate(-50%);
+    margin-left:100px;
+}
+
+.circle-image{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background-image:url("http://placekitten.com/g/200/400");
+    display:block;
+    background-position-y:25% 
+}
+
+html {
+  height: 100%;
+}
+
+.cinfo{
+  top: 0px;
+  bottom: 10px;
+  right: 0px;
+  position: fixed;
+}
+
+.btn.btn-lg.cinfo{
+  background: transparent;
+  border-color: white;
+}
+
+.btn:hover, 
+.btn:active, 
+.btn:focus,
+.btn:visited{
+  background: transparent;
+}
+
+@media (max-width: 1400px){
+    .cinfo{
+  top: 10px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+}
+
+
+
+
+
+.logo{
+  position: absolute;
+  background-image: url('<%= asset_path('WP_logo.png') %>');
+  z-index: 25;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-family: 'texfont';
+  color: white;
+  background: transparent;
+  font-size: 12px;
+  padding-right: 10px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  margin-right: 30px;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 150px;
+  height: 150px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 150px;
+}
+
+@media (max-width: 770px) {
+  .btn-circle.btn-xl{
+   width: 120px;
+   height: 120px;
+   font-size: 18px;
+   line-height: 1.33;
+   border-radius: 150px;
+  }
+
+  body{
+    padding-top: 80px;
+  }
+
+
+}
+
+@media (max-width: 490px){
+  .btn-circle.btn-xl{
+   width: 100px;
+   height: 100px;
+   font-size: 18px;
+   line-height: 1.33;
+   border-radius: 150px;
+  }
+}
+@media (max-width: 450px){
+  .btn-circle.btn-xl{
+   width: 60px;
+   height: 60px;
+   font-size: 14px;
+   line-height: 1.33;
+   border-radius: 150px;
+  }
+}
+
+.centered{
+  max-width: 550px;  
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color:white;
+  font-size: 16px;
+  font-family:'Ubuntu Light';
+  padding-top: 0.8cm;
+  width:100%;
+  overflow:hidden;
+}
+
+#content {
+min-height: 100%;
+height: auto !important;
+width:100%;
+height: 100%;
+}
+
+
+.push {
+  height:50px;
+}
+
+.hero-unit-wp {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-image: url("<%= asset_path('congruent_outline.png') %>");
+  background-repeat: repeat;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+
+.hero-unit-wp h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: white;
+}
+
+.hero-unit-wp li {
+  line-height: 30px;
+}
+
+
+
+#footer a{
+  text-decoration: none;
+  color: black;
+}
+
+#footer a:hover{
+  color: black;
+  }
+
+#footer {
+  width: 100%;
+  height:90px;
+  background: rgb(37, 37, 37);
+  border-top: dashed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;  
+  z-index: 10;
+}
+
+html {height: 100% }
+
+h1 {
+  text-align:center;
+  color: black;
+  font-size: 72px;
+  font-family:'texfont', 'Ubuntu';
+  padding-top: 10px;
+}
+
+h3 {
+  text-align:center;
+  color: white;
+  font-size: 72px;
+  font-family:'texfont', 'Ubuntu';
+  padding-top: 10px;
+  padding-bottom: 55px;
+}
+
+body.thin h1{ font-size: 40px; padding-top: 2px;}
+
+h2 {
+  color: black;
+  font-size: 18px;
+  font-family: 'texfont';
+  float: left;
+  text-decoration: none;
+}
+
+
+@font-face{
+  font-family: "texfont";
+  src: url('http://www.fontsforweb.com/public/fonts/423/SansationLight.eot');
+  src: local("Sansation Light"), url('http://www.fontsforweb.com/public/fonts/423/SansationLight.woff') format("woff"), url('http://www.fontsforweb.com/public/fonts/423/SansationLight.ttf') format("truetype");
+}
+
+p {
+  color:black;
+  font-size: 16px;
+  font-family:'texfont';
+  padding-top: 0.8cm;
+  width:100%;
+  overflow:hidden;
+}
+
+.push {
+  height:110px;
+}
+
+.push_min{
+  height:40px;
+}
+.push_min2{
+  width: 20px;
+}
+
+#content-wrapper{
+  display: none;
+}
+
+#container{
+  width:100%;
+  margin:0 auto;
+}
+
+#content {
+min-height: 100%;
+height: auto !important;
+width:100%;
+height: 100%;
+}
+
+@media (min-width: 768px) {
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+    }
+}
+
+/* Mobile layout */
+
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 680px) {
+
+  #container {
+    width: 100%;
+  }
+
+  #content {
+    width: 100%;
+    line-height: 100px;
+  }
+
+  .push {
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 100px;
+    padding-top: 2px;
+    text-align: center;
+    font-family: 'Ubuntu';
+  }
+
+  #footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(1, 1, 1, 0.9);
+    border-top: dashed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  /* Thin Layout */
+  body.thin #container {
+    width: 100%;
+    padding-top: 120px;
+  }
+
+  body.wide .row {
+    position: none;
+  }
+
+  body.thin .row {
+    float: none;
+  }
+}

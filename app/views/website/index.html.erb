@@ -1,0 +1,121 @@
+<style>
+  #our-team {
+    display: inherit !important;
+  }
+</style>
+<body>
+   <!-- Fixed navbar -->
+    <div class="navbar navbar-centered navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="push_min"></div>
+    <a class="navbar-brand" href="/"><img style="max-width:50px; margin-top: -35px;"
+             src="<%= asset_path('WP_logo_symb.png') %>"></a>
+      <div class="container ">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+                    <li><a href="/watpath">WatPath</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="push"></div>
+
+   <div class ="container">
+    <div class="push"></div>
+  <div class ="hero-unit-wp">
+    <h1> WatPath </h1>
+    
+<hr>
+<div class="container centered">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-circle-arrow-down"></span> Select a Path</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+
+                        <div class="panel-body">   
+                                        <a href="/watpath"><span class="glyphicon glyphicon-pencil text-primary"></span> Computer Science</a>
+                        </div>
+                        <div class="panel-body">
+                                        <a href="#"><span class="glyphicon glyphicon-pencil text-primary"></span> Statistics</a>
+                        </div>
+                        <div class="panel-body">
+                                        <a href="#"><span class="glyphicon glyphicon-pencil text-primary"></span> Actuarial Science</a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+      
+    </div>
+
+  </div>
+
+
+<!-- Footer Content -->
+<div class ="row">
+<div class = "col-md-6">
+  <h4 class ="mutled text-center"> About Us </h4> 
+  <p> Surf Guys are a group of hard working indiduals with a common goal of making life easier for the students of UW </p>
+  <button id="our-team" class="btn btn-default" data-toggle="modal" data-target="#ourTeam"><i class="glyphicon glyphicon-user"></i> Our Team</button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="ourTeam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close help" data-dismiss="modal"><span aria-hidden="false">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Team Profile</h4>
+      </div>
+      <div class="modal-body">
+       <div class="row-fluid">
+        <div id="portfolio" class="row">
+      <div class="col-md-3"> 
+      <div class="img-div">
+      <img src="http://placekitten.com/g/400/200" /></div> <p>McAndrew Bamimore - Front End Developer</p> </div> 
+      <div class="col-md-3"> 
+      <div class="img-div">
+      <img src="http://placekitten.com/g/300/300" /> </div> <p>Daniel MacKenzie - Back End Developer</p></div>
+      </div>
+      </div>
+      <div class="push_min"></div>
+      <div class ="row-fluid">
+      <div id="portfolio" class="row">
+      <div class="col-md-3"> 
+      <div class="img-div">
+      <img src="http://placekitten.com/g/200/400" /> </div> <p>Peng Huang - Lead Designer</p></div>
+      <div class="col-md-3"> 
+      <div class="img-div">
+      <img src="http://placekitten.com/g/200/200" /> </div> <p>Tracy Pydiah - Lead Researcher</p></div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class = "col-md-6">
+<h4 class = "multed text-center"> Reach Us </h4>
+<p> If you have any questions about the WatPath or any of the site's features or functionality, please feel free to contact us </p> 
+<a href="#" class="btn btn-info">Contact Us</a>
+</div>
+</div>
+
+</div>
+</body>
